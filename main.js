@@ -1,27 +1,21 @@
-const firstName = 'Paulo'
-const lastName = 'Malta'
+const numbers = [1,2, 3, 4, 5];
 
-const names = "Felipe,João,Julia";
+const numbersMultipliedByTwo = numbers.map(function(number){ // ALTERA TODOS DO ARRAY
+    return number * 2;
 
-console.log('Meu nome é ' + firstName + ' ' + lastName)
-console.log (`Meu nome é ${firstName.toUpperCase()} ${lastName.toLowerCase()}`);
+});
 
-console.log (names.split (","));
+const ages = [ 8, 13, 27, 30, 22, 19 ];
 
-const number = 5;
+const evenAges = ages.filter(function(age) { // FILTRA O ARRAY
+    return age % 2 == 0;
+});
 
-console.log(number.toString());
+console.log(evenAges)
 
-console.log(typeof number);
+const sumOfAges = ages.reduce(function(age, accumulator) {
+    return accumulator + age;
 
+}, 0);
 
-// Boleano
-
-console.log (2 == 2);
-
-// NULL & Undefined
-
-const x = null;
-
-const y = undefined;
-
+console.log (sumOfAges);
