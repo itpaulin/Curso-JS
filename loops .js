@@ -8,6 +8,7 @@ for (let lala of cars) { // percorre array parecido com o FOREACH do JAVA
 cars.forEach(function(car, index){ //conta posicao
     console.log(index);
   console.log(car);
+    
  });
 
 const person = {
